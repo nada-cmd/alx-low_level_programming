@@ -2,6 +2,7 @@
  * File: 0-positive_or_negative.c
  * Auth: Lahcen Oubbaih
  */
+#include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
 /* more headers goes there */
