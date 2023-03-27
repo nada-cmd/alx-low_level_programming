@@ -6,14 +6,16 @@
  */
 void rev_string(char *s)
 {
-int len = 0, index = 0;
-char tmp;
-while (s[index])
-len++;
-for (index = len - 1; index >= len / 2; index--)
+char rev = s[0];
+int counter = 0;
+int i;
+while (s[counter] != '\n')
+counter++;
+for (i = 0; i < counter; i++)
 {
-tem = s[index];
-s[index] = s[len - index - 1];
-s[len - index - 1] = tmp;
+counter--;
+rev = s[i];
+s[i] = s[counter];
+s[counter] = rev;
 }
 }
