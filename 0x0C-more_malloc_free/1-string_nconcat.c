@@ -41,5 +41,3 @@ j++;
 str[j] = '\0';
 return (str);
 }
-
-
