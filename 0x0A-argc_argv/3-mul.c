@@ -25,13 +25,10 @@ if (s[i] >= '0' && s[i] <= '9')
 digit = s[i] - '0';
 if (d % 2)
 digit = -digit;
-B
 n = n * 10 + digit;
-B
 f = 1;
 if (s[i + 1] < '0' || s[i + 1] > '9')
 break;
-B
 f = 0;
 }
 i++;
@@ -41,13 +38,10 @@ return (0);
 return (n);
 }
 /**
- * B
  * main - multiplies two numbers
  * @argc: number of arguments
  * @argv: array of arguments
- * B
  * Return: 0 (Success), 1 (Error)
- * B
  */
 int main(int argc, char *argv[])
 {
@@ -59,7 +53,10 @@ return (1);
 }
 num1 = _atoi(argv[1]);
 num2 = _atoi(argv[2]);
-result = num1 * num2;
+result = num1 *num2;
 printf("%d\n", result);
 return (0);
 }
+
+
+
